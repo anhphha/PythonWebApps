@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = '/styles/results.css') }}">
+
+</head>
+<body>
+    <div id="weatherResults">
+        <h3>Weather in {{ location }}</h3>
+        <h2>{{ temp }} degrees C</h2>
+        <h3>{{ weather }}</h3>
+        <h4>Feels like: {{ feels_like }} degrees C</h4>
+    </div>
+
+</body>
+</html>
