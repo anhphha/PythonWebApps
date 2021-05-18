@@ -28,7 +28,7 @@ def get_api_key():
     return config['openweathermap']['api']
 
 def get_weather_results(zip_code,api_key):
-    api_key = 'http://api.openweathermap.org/data/2.5/weather?zip={}&units=metric&appid={}'.format(zip_code,api_key)
+    api_key = 'http://api.openweathermap.org/data/2.5/weather?zip={},fi&units=metric&appid={}'.format(zip_code,api_key)
     req = requests.get(api_key)
     return req.json()
 
